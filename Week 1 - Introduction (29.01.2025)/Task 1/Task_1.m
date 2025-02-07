@@ -4,11 +4,12 @@
 % Year 2 (2024 – 2025)
 % DIG5111 – Digital Signal Processing
 
-filename = 'piano_middle_C.wav';
-[sig, Fs] = audioread(filename);
-
-samples = length(sig);
-
-duration = samples / Fs;
-
-audioData = audioinfo(filename);
+Amp=0.9;
+f=441;
+fs = 44100;
+ts= 1/fs;
+t = 0:1/fs:(0.1-ts);
+sig = Amp*sin(2*pi*f*t);
+sound(sig,fs);
+plot(t,sig);
+audiowrite('sine1.wav',sig,fs);
