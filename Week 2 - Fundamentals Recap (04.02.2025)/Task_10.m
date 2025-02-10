@@ -4,7 +4,9 @@
 % Year 2 (2024 – 2025)
 % DIG5111 – Digital Signal Processing
 
-filename = 'piano_middle_C.wav';
-[sig, Fs] = audioread(filename);
+filename = "piano_middle_C.wav";
+[sig, fs] = audioread("piano_middle_C.wav");
 
-sig2 = sig(66150:88200);
+sig_reversed = flipud(sig);
+
+sound(sig_reversed);
