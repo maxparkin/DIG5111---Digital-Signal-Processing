@@ -10,6 +10,8 @@ ir = ir_stereo(:, 1);
 
 [sig, samplingFrequency] = audioread("pluck.wav");
 
+resample(ir, sig);
+
 ir_range = 10;
 
 ir_range = ir_range / 100;
