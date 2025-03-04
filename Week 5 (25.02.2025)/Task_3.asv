@@ -28,9 +28,9 @@ padded_dry = [dry_sig(:);pad];
 
 %%
 
-wet_dry_ratio = 0.9;
+wet_dry_ratio = 0.5;
 
-blendedsig = wet_dry_ratio * wet_sig + 1-wet_dry_ratio * padded_dry;
+blendedsig = wet_dry_ratio * wet_sig + 1-we
 
 %%
 
