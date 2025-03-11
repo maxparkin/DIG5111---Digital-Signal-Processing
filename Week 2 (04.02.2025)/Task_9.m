@@ -4,8 +4,9 @@
 % Year 2 (2024 – 2025)
 % DIG5111 – Digital Signal Processing
 
-decimal = 1:1:30;
-decimal = decimal';
-hexadecimal = num2hex(decimal);
+filename = "piano_middle_C.wav";
+[sig, fs] = audioread("piano_middle_C.wav");
 
-table = table(decimal, hexadecimal, 'VariableNames', ["Decimal", "Hexadecimal"]);
+sig_reversed = flipud(sig);
+
+sound(sig_reversed);

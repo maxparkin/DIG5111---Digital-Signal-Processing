@@ -8,7 +8,7 @@ NoiseFs = 22050;
 NoiseDur = 2;
 Noise = randn(NoiseFs * 2, 1);
 
-IR = Bandpass_Filter_2.Numerator;
+IR = lowpass_filter.Numerator;
 
 newNoise = convolution(Noise, IR);
 

@@ -4,11 +4,8 @@
 % Year 2 (2024 – 2025)
 % DIG5111 – Digital Signal Processing
 
-filename = "piano_middle_C.wav";
-[sig, fs] = audioread("piano_middle_C.wav");
+decimal = 1:1:30;
+decimal = decimal';
+hexadecimal = num2hex(decimal);
 
-sig_rms = rms(sig);
-
-% The "rms" function return the RMS value of the array.
-
-sig_rms_normalised = sig / max(rms(sig) * 0.5);
+table = table(decimal, hexadecimal, 'VariableNames', ["Decimal", "Hexadecimal"]);

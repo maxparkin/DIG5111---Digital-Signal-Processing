@@ -7,4 +7,4 @@
 filename = 'piano_middle_C.wav';
 [sig, Fs] = audioread(filename);
 
-audioData = audioinfo(filename);
+sig2 = sig(66150:88200);

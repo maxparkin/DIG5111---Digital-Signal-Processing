@@ -9,7 +9,7 @@ NoiseDur = 2;
 Noise = randn(NoiseFs * 2, 1);
 
 a = 1;
-b = Bandpass_Filter_1.Numerator;
+b = filt1.Numerator;
 stem(b);
 newnoise1 = conv(Noise, b);
 newnoise2 = filter(b, a, Noise);

@@ -7,4 +7,8 @@
 filename = "piano_middle_C.wav";
 [sig, fs] = audioread("piano_middle_C.wav");
 
-sig_normalised = sig * 1 / max(abs(sig));
+sig_rms = rms(sig);
+
+% The "rms" function return the RMS value of the array.
+
+sig_rms_normalised = sig / max(rms(sig) * 0.5);
