@@ -5,11 +5,11 @@
 % DIG5111 – Digital Signal Processing
 
 %%
-[largeHall_stereo, samplingFrequency_largeHall] = audioread("LargeHall.wav");
+[largeHall_stereo, samplingFrequency_largeHall] = audioread("C:\Users\maxpa\Documents\MATLAB\DIG5111---Digital-Signal-Processing\Week 5 (25.02.2025)\Session Files\Audio Files-20250226\LargeHall.wav");
 
 largeHall = largeHall_stereo(:, 1);
 
-[sig, samplingFrequency] = audioread("pluck.wav");
+[sig, samplingFrequency] = audioread("C:\Users\maxpa\Documents\MATLAB\DIG5111---Digital-Signal-Processing\Week 5 (25.02.2025)\Session Files\Audio Files-20250226\pluck.wav");
 
 largeHall_sig = conv(largeHall, sig);
 
@@ -28,7 +28,7 @@ sound(largeHall_sig, samplingFrequency);
 
 %%
 
-[church_stereo, church_samplingFrequency] = audioread("Church.wav");
+[church_stereo, church_samplingFrequency] = audioread("C:\Users\maxpa\Documents\MATLAB\DIG5111---Digital-Signal-Processing\Week 5 (25.02.2025)\Session Files\Audio Files-20250226\Church.wav");
 
 church = church_stereo(:, 1);
 

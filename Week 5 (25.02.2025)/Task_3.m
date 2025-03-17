@@ -4,11 +4,11 @@
 % Year 2 (2024 – 2025)
 % DIG5111 – Digital Signal Processing
 
-[ir_stereo , ir_samplingFrequency] = audioread("Church.wav");
+[ir_stereo , ir_samplingFrequency] = audioread("C:\Users\maxpa\Documents\MATLAB\DIG5111---Digital-Signal-Processing\Week 5 (25.02.2025)\Session Files\Audio Files-20250226\Church.wav");
 
 ir = ir_stereo(:, 1);
 
-[dry_sig, samplingFrequency] = audioread("pluck.wav");
+[dry_sig, samplingFrequency] = audioread("C:\Users\maxpa\Documents\MATLAB\DIG5111---Digital-Signal-Processing\Week 5 (25.02.2025)\Session Files\Audio Files-20250226\pluck.wav");
 
 
 ir_resampled = resample(ir, samplingFrequency, ir_samplingFrequency);

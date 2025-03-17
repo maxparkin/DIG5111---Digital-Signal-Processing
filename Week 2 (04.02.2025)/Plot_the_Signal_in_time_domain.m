@@ -5,7 +5,7 @@
 % DIG5111 – Digital Signal Processing
 
 %audio filename must in same directory of this m file
-Filename = 'piano_middle_C.wav';
+Filename = 'C:\Users\maxpa\Documents\MATLAB\DIG5111---Digital-Signal-Processing\Week 2 (04.02.2025)\Session Files\piano_middle_C.wav';
 
 % First read wav file into memory
 [Sig, Fs]=audioread(Filename);

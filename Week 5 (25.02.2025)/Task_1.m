@@ -7,7 +7,7 @@
 ir = zeros(1, 10000); % Making this array shorter to 10,000, will decrease the total decay time.
 ir([1, 2000, 4000, 6000, 8000]) = [1, 0.3, 0.25, 0.2, 0.15]; % Lowering the specified values in the array will make the decay quieter and attenuate it. 
 
-[sig, samplingFrequency] = audioread('pluck.wav');
+[sig, samplingFrequency] = audioread('C:\Users\maxpa\Documents\MATLAB\DIG5111---Digital-Signal-Processing\Week 5 (25.02.2025)\Session Files\Audio Files-20250226\pluck.wav');
 
 conv_sig = conv(sig, ir);
 
