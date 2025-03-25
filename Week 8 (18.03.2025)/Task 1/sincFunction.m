@@ -16,5 +16,8 @@ f0 = frequency / nyquist;
 
 b = f0 * sinc(f0 * (negativePoints:points));
 
+plot(b);
+fvtool(b);
+
 sincFunction = b;
 
