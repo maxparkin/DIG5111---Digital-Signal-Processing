@@ -27,7 +27,7 @@ f0 = sincfrequency / nyquist;
 a = 1;
 
 b = f0 * sinc(f0 * (negativePoints:points));
-wn = hann(length(b));
+wn = hamming(length(b));
 
 sig_filtered = filter(wn'.*b, a, sig);
 
