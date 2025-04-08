@@ -15,4 +15,5 @@ f = (Fs / 2) * (0:len_half) / len_half;
 plot(f, mag(1:len_half + 1));
 xlabel('Frequency')
 ylabel('dB');
+
 end
