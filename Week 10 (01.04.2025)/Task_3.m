@@ -54,6 +54,10 @@ newSignal = newSignal .* low;
 
 figure
 plot(newSignal);
+filt_order = 200;
+h = ones(filt_order,1)/filt_order;
+env2 = conv(abs(xr),h);
 
 figure
-plot(len, real(xr), len, imag(xr));
+plot(env2);
+
