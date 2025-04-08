@@ -4,7 +4,7 @@
 % Year 2 (2024 – 2025)
 % DIG5111 – Digital Signal Processing
 
-function FFT = myFFT(audioFile, Fs)
+function myFFT(audioFile, Fs)
 
 len = length(audioFile);
 fft_result = fft(audioFile);

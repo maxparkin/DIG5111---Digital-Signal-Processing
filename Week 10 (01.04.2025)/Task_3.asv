@@ -56,4 +56,4 @@ figure
 plot(newSignal);
 
 figure
-plot(len, real(xr), len, imag(xr));
+plot(hilbert_result);
