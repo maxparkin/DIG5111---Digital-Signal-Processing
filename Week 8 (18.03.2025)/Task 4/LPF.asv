@@ -17,8 +17,6 @@ a1 = -2 * cos(w0);
 a2 = 1 - alpha;
 
 b = [b0 b1 b2];
-b = b / a0;
 a = [a0 a1 a2];
-a = a / a0;
 
 end
