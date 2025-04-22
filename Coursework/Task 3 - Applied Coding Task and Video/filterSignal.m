@@ -1,3 +1,9 @@
+% Max Parkin
+% Birmingham City University
+% BSc (Hons) Degree in Sound Engineering and Production with Professional Placement Year
+% Year 2 (2024 – 2025)
+% DIG5111 – Digital Signal Processing
+
 function filterSignal(audioFile, filterType, cutoffFrequency, filterOrder)
 
 % Read in specified audio file. Read in both the file data and sample rate
