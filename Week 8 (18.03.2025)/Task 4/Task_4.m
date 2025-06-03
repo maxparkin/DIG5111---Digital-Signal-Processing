@@ -4,5 +4,5 @@
 % Year 2 (2024 – 2025)
 % DIG5111 – Digital Signal Processing
 
-[b, a] = LPF(10000, 44100, 20);
+[b, a] = LPF(10000, 44100, 10);
 fvtool(b, a);
