@@ -29,7 +29,7 @@ if filterType == "lowpass"
 
     % Use the 'fdesign.lowpass' function to calculate the filter
     % specifications with the given parameters.
-    filterSpecification = fdesign.lowpass('N,Fp,Ast,Ap',N,Fp,Ast,Ap);
+    filterSpecification = fdesign.lowpass('N,Fp,Ap,Ast',N,Fp,Ap,Ast);
     
 % Run below code if input argument 'filterType' is equal to 'highpass'.
 elseif filterType == "highpass"
